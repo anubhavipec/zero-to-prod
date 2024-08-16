@@ -16,6 +16,9 @@ serde = { version = "1.0.207", features = ["derive"] }
 config = "0.14.0"
 uuid = { version = "0.8.1", features = ["v4"] }
 chrono = "0.4.38"
+env_logger = "0.9"
+log = "0.4"
+tracing = { version = "0.1", features = ["log"] }
 
 [build-dependencies]
 syn = "1"
