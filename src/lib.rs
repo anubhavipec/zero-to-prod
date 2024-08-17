@@ -1,12 +1,9 @@
-
-use std::net::TcpListener;
-use actix_web::{App, HttpRequest, HttpResponse, HttpServer, Responder, web};
-use actix_web::dev::Server;
+use actix_web::{HttpRequest, HttpResponse, Responder};
 
 pub mod configuration;
 pub mod startup;
 pub mod routes;
-
+pub mod telemetry;
 
 
 async fn health_check() -> impl Responder {
